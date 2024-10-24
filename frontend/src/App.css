@@ -1,0 +1,147 @@
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #f06, #f90); /* Gradient background for a more vibrant look */
+  font-family: 'Arial', sans-serif;
+  color: #fff; /* Lighter text color to contrast the vibrant background */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6)); /* Glowing effect around the logo */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 15s ease-in-out; /* Faster and smoother spin */
+  }
+}
+
+.App-header {
+  background-color: #ff4081; /* Brighter pink header */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin); /* Adjusted font size for better visibility */
+  color: white;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* More pronounced shadow */
+}
+
+.App-link {
+  color: #ffcc00; /* Bright yellow link */
+  text-decoration: underline; /* Add underline for more emphasis */
+  transition: color 0.2s, transform 0.2s; /* Add a transform for a playful effect */
+}
+
+.App-link:hover {
+  color: #ffd700; /* Even brighter yellow on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Product card styles */
+.product-card {
+  background: linear-gradient(135deg, #42a5f5, #1e88e5); /* Vibrant blue gradient background */
+  border-radius: 20px; /* Softer, more rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s; /* Slower, smoother transition */
+  margin: 25px 0; /* More spacing between cards */
+  color: white; /* Ensure text is readable on the blue background */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Slightly larger scale on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+}
+
+/* Product image styles */
+.product-image {
+  width: 100%;
+  height: 200px; /* Taller for better visuals */
+  object-fit: cover;
+  filter: brightness(1.1); /* Slightly brighter images */
+}
+
+/* Button styles */
+.button {
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #ff4081, #f50057); /* Pink gradient button */
+  color: white;
+  border: none;
+  border-radius: 30px; /* Fully rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth background and transform transition */
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow to buttons */
+}
+
+.button:hover {
+  background-color: #e91e63; /* Darker pink on hover */
+  transform: translateY(-3px); /* Lift on hover */
+}
+
+/* Input styles */
+input[type="text"],
+input[type="number"] {
+  padding: 15px;
+  border: 2px solid #42a5f5; /* Brighter border */
+  border-radius: 10px;
+  width: 100%;
+  margin: 10px 0;
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #1e88e5; /* Brighter border on focus */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* More shadow on focus */
+  outline: none;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+  .product-card {
+    margin: 15px;
+  }
+
+  .button {
+    padding: 10px 20px;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    padding: 12px;
+  }
+}
+
+/* New styles for product details and title highlighting */
+.product-details {
+  margin-left: -1rem; /* Shift slightly to the left */
+}
+
+.highlight-title {
+  color: #ffcc00; /* Highlight color for title */
+  font-weight: bold; /* Bold title */
+}
+
+
+.highlight-section {
+  background-color: rgba(255, 255, 0, 0.2); /* Light yellow background for highlight */
+  border-left: 4px solid yellowgreen; /* Yellow left border */
+  padding: 10px; /* Padding around the section */
+  border-radius: 8px; /* Rounded corners for a softer look */
+}
